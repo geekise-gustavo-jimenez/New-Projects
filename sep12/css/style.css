@@ -1,0 +1,68 @@
+body{
+  margin: 0;
+}
+
+header{
+  width:100%;
+}
+
+nav h1 img{
+  width: 100px;
+}
+
+h1{
+  width:70%;
+  float: left;
+}
+
+nav{
+  width:100%;
+}
+
+ul{
+  margin: 0;
+}
+
+li{
+  display: inline-block;
+  float: right;
+  padding: 1%;
+}
+
+#left{
+  float: left;
+  width: 50%;
+}
+
+#right{
+  float: right;
+}
+
+section article div img{
+  width: 100px;
+  float: right;
+}
+st
+section{
+  float: left;
+}
+
+#main{
+  width: 60%;
+}
+
+#footer{
+  display: inline-block;
+  width:100%;
+}
+
+#footer div{
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+#footer div img{
+  width: 100%;
+  border-radius: 100%;
+}

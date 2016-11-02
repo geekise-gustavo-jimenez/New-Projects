@@ -1,0 +1,60 @@
+body{
+  margin: 0;
+  background-image: url('../images/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+#first{
+  width: 100px;
+}
+
+h1{
+  margin: 0;
+  float: left;
+  width:40%;
+}
+
+h1 a{
+  text-decoration: none;
+  color: white;
+}
+
+span{
+  color: dodgerblue;
+}
+
+ul{
+  display: inline-block;
+  margin: 0;
+  float: right;
+  padding: 1%;
+}
+
+li{
+  display: inline-block;
+  padding: 1% 0;
+}
+
+li a{
+  text-decoration: none;
+  color: grey;
+}
+
+div{
+  margin: auto;
+  width: 50%;
+}
+
+p{
+  margin: auto;
+  display: inline-block;
+  text-align: center;
+  color: grey;
+}
+
+p:nth-of-type(1){
+  font-size: 30px;
+  color: white;
+  font-family: sans-serif;
+}

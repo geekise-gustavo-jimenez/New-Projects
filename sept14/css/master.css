@@ -1,0 +1,40 @@
+body{
+  margin: 0;
+  background-color: red;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 500px;
+
+}
+
+section > div{
+  flex: 1;
+}
+
+section > div:nth-child(2){
+  display: flex;
+}
+
+section > div:nth-child(2) div{
+  flex: 1;
+}
+
+section .div1{
+  background-color: green;
+}
+
+section div .div2{
+  background-color: cornsilk;
+}
+
+section div .div3{
+  background-color: yellow;
+}
+
+section div .div4{
+  background-color: steelblue;
+}

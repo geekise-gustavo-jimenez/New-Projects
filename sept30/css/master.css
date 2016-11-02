@@ -1,0 +1,150 @@
+body{
+  margin: 0;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/home-slider-1-slide-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 34em;
+}
+
+header aside div{
+  display: flex;
+  flex: 1;
+
+}
+
+header aside{
+  display: flex;
+
+}
+
+nav{
+  display: flex;
+  justify-content: flex-end;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+main section div{
+  flex: 1;
+  height: 250px;
+}
+
+main section{
+  display: flex;
+
+  flex: 1;
+}
+main section:nth-last-of-type(1) div:nth-of-type(1){
+  background-image: url(../img/home-1-510x550.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main section:nth-last-of-type(1) div:nth-of-type(2){
+  background-image: url(../img/home-2-510x550.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main section:nth-last-of-type(1) div:nth-of-type(3){
+  background-image: url(../img/home-3-510x550.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main section:nth-last-of-type(1) div:nth-of-type(4){
+  background-image: url(../img/home-4-510x550.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main section:nth-last-of-type(2) div:nth-of-type(1){
+  background-image: url(../img/home-5-510x550.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main section:nth-last-of-type(2) div:nth-of-type(2){
+  background-image: url(../img/home-6-510x550.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main section:nth-last-of-type(2) div:nth-of-type(3){
+  background-image: url(../img/home-7-510x550.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main section:nth-last-of-type(2) div:nth-of-type(4){
+  background-image: url(../img/home-8-510x550.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+ul{
+  margin: 0;
+}
+
+ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 2em;
+}
+
+.mid{
+  display: flex;
+  flex-direction: column;
+}
+
+.mid .aside2{
+  display: flex;
+}
+
+.mid2 .aside1{
+  background-image: url(../img/bg-image-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 1;
+  height: 50em;
+}
+
+.mid2 {
+  display: flex;
+
+}
+
+.mid2 .aside3{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-end;
+  background-color: #F7F6F4;
+}
+
+.mid2 .aside3 progress{
+  background-color: blue;
+}
+
+.mid3 .aside4{
+  display: flex;
+  padding: 60px;
+}
+
+.mid4{
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/home-slider-1-slide-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 34em;
+}

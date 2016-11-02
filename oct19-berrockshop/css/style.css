@@ -1,0 +1,272 @@
+body{
+  background-color: #731514;
+  margin-left: 20%;
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
+header{
+  width: 800px;
+  background-color: #FFFFF0;
+}
+
+header div{
+  display: flex;
+  flex: 1;
+  border: 3px solid black;
+}
+
+header div div{
+  display: flex;
+  border-right: 3px solid black;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+header h1{
+  margin: 0;
+  color: #D2A800;
+  text-align: center;
+}
+
+header div img{
+  flex: 3;
+  border: 3px solid black;
+  box-sizing: border-box;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-around;
+  border-top: 2px dotted #B5B5AA;
+  border-bottom: 2px dotted #B5B5AA;
+  margin-left: 15px;
+  width: 770px;
+}
+
+li{
+  list-style-type: none;
+}
+
+a, h1{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-shadow: .8px .8px #731514;
+}
+
+nav a:hover{
+  text-shadow: 2px 2px 8px #731514;
+}
+
+hr{
+  border: 2px solid #731514;
+  margin-top: 0;
+}
+
+.home{
+  display: flex;
+
+  padding-top: 40px;
+  width: 800px;
+}
+
+main{
+  width: 800px;
+  background-color: #FFFFF0;
+}
+.home section {
+  flex: 1;
+  margin-left: 40px;
+
+}
+
+.home .left_home div:nth-of-type(1) div{
+  display: flex;
+
+}
+
+
+
+.home .right_home > div{
+  display: flex;
+  height: 150px;
+  flex-direction: column;
+  width: 75%;
+  border: 2px solid gray;
+  align-items: center;
+  border-radius: 5%;
+  margin-top: 40px;
+  position: relative;
+}
+
+.home .right_home > div h1{
+  position: relative;
+  margin: 0;
+  background-color: #FFFFF0;
+}
+
+.home .right_home > div:nth-of-type(1) h1{
+  transform: translate3d(-45%, -60%, 0);
+}
+
+.home .right_home > div:nth-of-type(2) h1{
+  transform: translate3d(-15%, -60%, 0);
+}
+
+.home .right_home > div:nth-of-type(3) h1{
+  transform: translate3d(-25%, -60%, 0);
+}
+
+.home .right_home > div:nth-of-type(4) h1{
+  transform: translate3d(-90%, -60%, 0);
+}
+
+.history{
+  display: flex;
+}
+
+.history .left_history{
+  padding: 30px;
+  flex: 2;
+}
+
+.history .left_history p{}
+
+.history .left_history img:nth-of-type(1){
+  float: right;
+}
+
+.history .right_history{
+  margin-top: 40px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.menu .same{
+  display: flex;
+  flex-direction: column;
+}
+
+.menu .h1 h1{
+  margin: 0;
+}
+
+.special{
+  position: relative;
+}
+
+.menu .h1{
+  display: flex;
+  margin: 30px;
+  justify-content: space-around;
+}
+
+.same{
+  margin: 20px;
+  border: 1px solid #731514;
+  border-radius: 5%;
+  position: relative;
+}
+
+.same .h2{
+  margin: 0;
+  position: relative;
+  background-color: #FFFFF0;
+  width: 32%;
+  transform: translate3d(-5%, -45%, 00);
+}
+
+.same .h3{
+  margin: 0;
+  position: relative;
+  background-color: #FFFFF0;
+  width: 32%;
+  transform: translate3d(-5%, -45%, 00);
+}
+
+#dual{
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid #731514;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #FFFFF0;
+  width: 800px;
+}
+
+.news{
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  margin-bottom: 0;
+}
+
+.news h1{
+  float: right;
+}
+
+.news section{
+  margin-left: 20%;
+  margin-right: 20%;
+  border-top: 1px dotted #731514;
+  border-bottom: 1px dotted #731514;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .form{
+  margin-left: 35%
+}
+
+.contact .forms{
+  margin-left: 31%;
+}
+
+.contact .formss{
+  margin-left: 45%;
+  background-color: #FFFFF0;
+}
+
+.contact .comment{
+  width: 300px;
+  height: 300px;
+}
+
+.basic h1{
+  margin: 0;
+}
+
+.basic{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px dotted #B5B5AA;
+
+  background-image: linear-gradient( to right, hsla(0, 100%, 100%,1) 15%,
+  hsla(0, 100%, 100%, 0.1) 15%,
+  hsla(0, 40%, 90%, 0.3) 20%,
+  hsla(0, 90%, 30%, 0.5) 50%);
+}
+
+.contact .basic2{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

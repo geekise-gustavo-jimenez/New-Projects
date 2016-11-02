@@ -1,0 +1,94 @@
+body{
+  margin: 0;
+  color: white;
+}
+
+header{
+  height: 100vh;
+  background-image: url(../img/slide-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+nav{
+  display: flex;
+}
+
+nav div{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul{
+  margin: 0;
+
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+li{
+  display: inline-block;
+  padding-left: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 10px;
+
+}
+
+ul li:hover{
+  background-color: lightblue;
+}
+
+section{
+  display: flex;
+  height: 70vh;
+}
+
+.right{
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;;
+}
+
+.left h1{
+  font-size: 20vw;
+  margin: 0;
+}
+
+.left span{
+  font-size: 2.5vw;
+}
+
+.right div{
+  height: 5vh;
+  width: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+
+  border: 1px solid white;
+}
+
+.left{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+input{
+  width: 100px;
+  height: 50px;
+  color: white;
+  background-color: hsla(198, 50%, 58%, 1);
+  border: none;
+}

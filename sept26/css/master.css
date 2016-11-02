@@ -1,0 +1,124 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css";
+body{
+  margin:0;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+}
+
+header{
+  display: block;
+  height: 450px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+nav{
+  display: flex;
+  flex: 2;
+  justify-content: space-around;
+
+}
+
+header div{
+  flex: 4;
+}
+
+ul{
+  display: flex;
+  padding: 3%;
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+    flex-wrap: nowrap;
+    margin: 0 5px;
+}
+
+main aside section:nth-of-type(1){
+  margin-right: 5px;
+}
+
+main aside section:nth-of-type(3){
+  margin-left: 5px;
+}
+
+div p{
+  width: 75%;
+  font-size: 20px;
+  text-align: center;
+}
+
+ div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button{
+  width: 95px;
+
+}
+
+
+
+main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+aside{
+  text-align: center;
+  display: flex;
+  justify-content:
+  flex: 1;
+  margin-bottom: 50px;
+}
+
+img{
+  width: 100%;
+}
+
+.trouble{
+
+  margin-left: 3%;
+  margin-right: 3%;
+  background-color: white;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+  background-color: hsl(302, 66%, 47%);
+}
+
+input{
+  height: 30px;
+  width: 66%;
+  border-radius: 6px;
+  margin-top: 15px;
+
+}
+
+footer div{
+  display: flex;
+  flex-direction: row;
+}
+
+.message{
+  height:100px;
+}
+
+aside section div h1 i{
+  margin-right: 50px;
+}

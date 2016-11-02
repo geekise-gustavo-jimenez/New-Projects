@@ -1,0 +1,23 @@
+body{
+  margin: 0;
+}
+
+section{
+  padding: 0 10%;
+}
+
+.fc{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.fc div{
+  width: 50%;
+}
+
+.fc img{
+  float: left;
+  border-radius: 100%;
+}
+//?

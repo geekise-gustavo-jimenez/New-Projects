@@ -1,0 +1,157 @@
+body {
+  background-color: hsla(129, 100%, 100%, 0.75);
+  color: rgb(129, 70, 166);
+  margin: 0;
+}
+ .nav nav{
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding: 10px 20px
+}
+
+.nav nav ul {
+  display: inline-flex;
+  align-items: center;
+  list-style: none;
+}
+.nav nav * {
+  margin: 0;
+  padding: 0;
+}
+ .nav nav ul li{
+  padding: 10px;
+  margin: 0 5px ;
+  font-size: 80%
+}
+ .nav nav ul a{
+  text-decoration: none;
+  color: inherit;
+}
+.button {
+  border: 2px solid rgb(129, 70, 166);
+  border-radius: 10%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin: 0 auto;
+}
+#hero {
+  text-align: center;
+  padding: 50px 0 150px;
+}
+#hero img {
+  align-self: center;
+}
+button {
+  color: white;
+  background-color: rgb(129, 70, 166);
+  padding: 10px 20px;
+  border: 1px solid rgb(129, 70, 166);
+  border-radius: 9%;
+  align-self: center;
+}
+
+hr {
+  width: 5%;
+  padding-top: 40px;
+  border: solid 2px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: inherit;
+}
+ .customers section{
+  width: 70%;
+  margin: 0 auto;
+  align-content: center;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+.customers section article h1 {
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+.customers article p {
+  padding-bottom: 15px;
+}
+.customers article address {
+font-style: normal;
+font-size: 12px
+}
+
+#circle img {
+  border: solid 5px;
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+}
+article hr {
+  width: 100%;
+}
+ .customers address{
+  font-size: 70%;
+}
+ .customers div{
+  position: absolute;
+  left: 80px;
+  bottom: 45%;
+  font-size: 50px;
+}
+ .customers div{
+  position: absolute;
+  right: 80px;
+  bottom: 45%;
+  font-size: 50px;
+}
+ .customer div {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  padding: 20px 0;
+}
+#images  {
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 100px;
+  width: 25%;
+}
+
+.all{
+  display: flex;
+align-items: center;
+margin:10% 15%;
+color:hsl(269, 79%, 73%)
+}
+
+.watch{
+width:50%
+}
+
+.words{
+width:50%
+}
+
+ .product button{
+  background-color:hsl(277, 30%, 47%);
+  font-size: 20px;
+  border-radius: 4px;
+  color:white;
+  padding:5px 10px
+}
+.team  section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+.team  div  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+.team  p, h3, h1 {
+    color:rgb(154, 29, 170);
+  }

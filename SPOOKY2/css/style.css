@@ -1,0 +1,38 @@
+html{
+  background-image: url(../img/headbg.jpg);
+  background-position: center top;
+  background-repeat: repeat-x;
+  background-color: black;
+}
+
+body{
+  color: white;
+}
+
+header{
+
+}
+
+section{
+  width:60%;
+  float: left;
+  background-image: url(../img/leftbg.jpg);
+  background-position: right top;
+}
+
+aside{
+  width:40%;
+  float: right;
+  background-image: url(../img/rightbg.png);
+  background-position: right top;
+}
+
+footer{
+  padding: 50px 0;
+}
+
+footer .container{
+  position: absolute;
+  top:0;
+  right: 0;
+}

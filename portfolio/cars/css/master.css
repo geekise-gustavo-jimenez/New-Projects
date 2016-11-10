@@ -1,0 +1,139 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+body{
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  background-image: url(../cars/img/home-slider-1-slide-2.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height:400px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1{
+
+  background-image: url(../cars/img/logo-229x39.png);
+  background-repeat: no-repeat;
+}
+
+nav h1 a{
+  width: 229px;
+  height: 39px;
+  display: block;
+  text-decoration: none;
+  color: transparent;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/*hover*/
+nav ul{
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+}
+
+nav ul ul{
+  display: none;
+  position: absolute;
+  top: 100%;
+  transform: translate3d(-40%,0,0);
+  background-color: hsla(0, 0%, 0%, 0.8);
+}
+
+nav > ul > li:hover ul{
+  display: block;
+}
+
+nav ul ul a{
+  display: block;
+  padding: 20px 100px;
+}
+
+nav > ul > li{
+  position: relative;
+}
+/**/
+/*to put / */
+nav > ul > li::after{
+  content: "/";
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav > ul > li:last-child::after{
+  content: none;
+}
+
+header h2{
+  margin: auto;
+  font-size: 17vw;
+
+}
+
+#gallery{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+#gallery > div{
+  width: calc(100% / 4);
+  height: 28vw;
+  overflow: hidden;
+  position: relative;
+
+}
+
+#gallery > div > img{
+  width: 100%;
+  transform: scale(1.25);
+}
+
+#gallery > div:hover div{
+  border-radius: 0%;
+  opacity: 1;
+  transform: scale(1);
+}
+
+#gallery small{
+
+}
+
+#gallery div div{
+  transition: all 300ms ease-in-out;
+  border-radius: 100%;
+  transform: scale(.7);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: hsla(190, 100%, 58%, .8);
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: white;
+}
+
+.mid{
+  display: flex;
+}

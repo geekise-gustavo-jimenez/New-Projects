@@ -1,0 +1,153 @@
+body{
+  margin: 0;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+ul{
+  display: flex;
+}
+
+ul li a{
+  color: black;
+}
+
+li{
+  padding:0px 10px;
+  list-style-type: none;
+  font-size: 13px;
+  border-radius: 10%;
+  text-align: center;
+}
+
+h1 a{
+  color: #79C255;
+  font-size: 30px;
+}
+
+li a, h1 a{
+  text-decoration: none;
+}
+
+#banner{
+  background-image: url(../img/banner.jpg);
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav li:nth-of-type(1){
+  background-color: #79C255;
+}
+
+main{
+  background-color: #79C255;
+  text-align: center;
+  color: white;
+}
+
+h1{
+  margin: 0;
+  font-size: 50px;
+}
+
+.white{
+  color: black;
+  background-color: white;
+  padding-top: 20px;
+}
+
+#pics{
+  display: flex;
+  justify-content: space-between;
+}
+
+#pics img:nth-of-type(1){
+  margin-right: 10px;
+}
+
+#pics img:nth-of-type(3){
+  margin-left: 10px;
+}
+
+input{
+  padding: 15px 25px;
+  background-color: #79C255;
+  border: none;
+  border-radius: 10%;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.input{
+  text-decoration: none
+}
+
+#white_box{
+  background-color: white;
+
+}
+
+section aside > div{
+  border: 2px solid #F4F4F4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  height: 250px;
+  border-radius: 10%;
+}
+
+section aside > div > div{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+  font-size: 10px;
+  width: 20px;
+  height: 60px;
+  border: 1px solid black;
+}
+
+#boxes{
+  display: flex;
+  margin-bottom: 5%;
+}
+
+footer{
+  height: 200px;
+  background-color: #79C255;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #BCE1AA;
+
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+footer span:nth-of-type(1){
+  border-right: 1px solid white;
+  margin-right: 3px;
+}
+
+footer span:nth-of-type(3){
+  border-left: 1px solid white;
+  margin-left: 3px;
+}
+
+main section p , main h2{
+  color:#6F6F6F;
+}
+
+p a{
+  color:white;
+}

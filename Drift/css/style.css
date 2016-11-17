@@ -1,0 +1,179 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+body{
+  margin: 0;
+}
+
+#text h1{
+  color: #545454;
+  text-align: center;
+}
+
+#text p{
+  color: #949494;
+}
+
+#boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #F2F2F2;
+  padding: 5%;
+}
+
+#boxes aside span{
+  font-size: 30px;
+}
+
+#boxes aside{
+  width: 350px;
+  height: 500px;
+  border-radius: 2%;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#boxes aside img{
+  height: 150px;
+  width: 100%;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+
+input{
+  border: none;
+  padding: 5% 10%;
+  border-radius: 10%;
+  background-color: white;
+  border: 1px solid #ECECEC;
+}
+
+section a{
+  text-decoration: none;
+}
+
+#blue{
+  background-color: #47CDD9;
+  height: 200px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+
+}
+
+#blue input{
+  margin-left: 10px;
+  padding: 15px 25px;
+  background-color: #47CDD9;
+  border: 1px solid white;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+footer div{
+  margin: 5%;
+}
+
+footer div i{
+  padding: 10px;
+  margin: 0px 10px;
+  border: 1px solid #ECECEC;
+  border-radius: 10%;
+  color: #949494;
+
+}
+
+footer div i:hover{
+  background-color: #ECECEC;
+}
+
+
+footer div a{
+  color: #949494;
+}
+
+footer div a:hover{
+  text-decoration: none;
+  color: #47CDD9;
+}
+
+footer span{
+  color: #949494;
+}
+
+@media screen and (max-width: 831px){
+  #boxes{
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 716px){
+  #boxes{
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+@media screen and (max-width: 350px){
+  #boxes{
+    padding: 0;
+    margin: 0;
+  }
+  #blue{
+    flex-direction: column;
+  }
+
+}
+
+/*
+#boxes aside:nth-of-type(1) div{
+  background-image: url(../img/book.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#boxes aside:nth-of-type(2) div{
+  background-image: url(../img/house.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#boxes aside:nth-of-type(3) div{
+  background-image: url(../img/type.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#boxes aside:nth-of-type(4) div{
+  background-image: url(../img/mountain.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#boxes aside:nth-of-type(5) div{
+  background-image: url(../img/sea.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#boxes aside:nth-of-type(6) div{
+  background-image: url(../img/road.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}*/

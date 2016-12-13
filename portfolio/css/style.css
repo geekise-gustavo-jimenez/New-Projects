@@ -9,8 +9,13 @@ body{
 
 header{
   text-align: center;
+  margin: 0;
 }
 
+header img{
+  width: 100%;
+    margin: 0;
+}
 /*ul{
   margin: 0;
   display: flex;
@@ -35,6 +40,7 @@ img{
 .left_home img{
   height: 15vh;
   border-radius: 100%;
+
 }
 
 .home div{
@@ -119,6 +125,11 @@ img{
 .none{
   display: flex;
   flex-direction: column;
+}
+
+#work{
+  display: flex;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 600px){

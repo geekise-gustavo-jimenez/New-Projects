@@ -45,14 +45,41 @@
         <img src="img/more-colors.jpg">
         <img src="img/welcome.jpg">
       </div>
-      <div id="white">
-        <div id="light">
-          <div id="red"></div>
-          <div id="yellow"></div>
-          <div id="green"></div>
+
+      <div class="container">
+        <div class="death"></div>
+        <div class="falcon"></div>
+      </div>
+      <div id="box">
+        <div id="car">
+
         </div>
-        <img src="img/beetle_car_clip_art_18586.jpg" />
       </div>
     </main>
+
+    <script>
+      var car=document.getElementById('car');
+      var box=document.getElementById('box');
+
+      var carleft = 0;
+      function anim(e) {
+        if(e.keycode==39){
+          carleft +=2;
+          car.style.left = carleft + 'px';
+          if (carleft >=600) {
+            carleft -=2;
+          }
+        }
+        if(e.keycode==37){
+            carleft -=2;
+            car.style.left = carleft + 'px';
+            if (carleft <=0) {
+              carleft +=2;
+            }
+        }
+      }
+
+      document.onkeydown = anim;
+    </script>
   </body>
 </html>

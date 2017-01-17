@@ -1,0 +1,25 @@
+body{
+  margin: 0;
+}
+
+nav{
+  text-align: center;
+}
+
+nav input:nth-of-type(1){
+  width: 30%;
+}
+
+main{
+  display: flex;
+  margin: 0 5%;
+}
+
+li{
+  list-style:none;
+}
+
+section:nth-of-type(1) img {
+  width: 500px;
+  height: 300px;
+}

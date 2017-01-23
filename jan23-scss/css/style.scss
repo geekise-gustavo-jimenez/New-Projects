@@ -1,0 +1,53 @@
+@import "_mixins";
+@import "_variables";
+@import "_placeholders.scss";
+
+ body{
+  font-family: sans-serif;
+}1
+
+h1{
+  color: $primary-color;
+  @extend %border-style;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px;
+  background-color: green;
+  // @extend %border-style;
+  @include border-style(green);
+}
+
+.btn:hover{
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+// this is a placeholder selector in scss only you can use them like classes but only for css
+
+a.btn:last-of-type{
+  background-color: red;
+}
+
+ul{
+  display: flex;
+  
+}
+
+li{
+  list-style: none;
+}
+
+ul:nth-of-type(1) li{
+  @include el-calc(5);
+}
+ul:nth-of-type(2) li{
+  @include el-calc(7);
+}

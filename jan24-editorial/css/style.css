@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav {
+  width: 345px;
+  height: 100vh;
+  overflow-y: scroll;
+  top: 0;
+  bottom: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}

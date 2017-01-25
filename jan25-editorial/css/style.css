@@ -5,14 +5,6 @@ body {
   display: flex;
 }
 
-nav {
-  width: 345px;
-  height: 100vh;
-  overflow-y: scroll;
-  top: 0;
-  bottom: 0;
-}
-
 nav section {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -30,6 +22,10 @@ nav section {
 nav section input {
   height: 25px;
   width: 250px;
+}
+
+main.open {
+  position: relative;
 }
 
 nav ul {
@@ -51,4 +47,18 @@ nav li {
 
 nav h1 {
   margin-left: 30px;
+}
+
+nav {
+  width: 345px;
+  height: 100vh;
+  overflow-y: scroll;
+  position: relative;
+  top: 0;
+  left: -5000px;
+  transition: all 300ms ease-out;
+}
+
+nav.open {
+  left: 0px;
 }

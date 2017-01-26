@@ -15,3 +15,7 @@ function snAnimOpen() {
 function snAnimClose() {
   sn.classList.remove("open")
 }
+
+if (true) {
+
+}

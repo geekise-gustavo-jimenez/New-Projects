@@ -271,3 +271,10 @@ main {
 .right img {
   width: 500px;
 }
+
+.scale:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  width: 500px;
+}

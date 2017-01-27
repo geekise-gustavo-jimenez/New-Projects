@@ -1,8 +1,8 @@
-$primary: red;
+
 body{
   margin: 0 ;
   display: flex;
-  // background-color: $primary;
+  font-family: "Open Sans", sans-serif;
 }
 
 
@@ -186,6 +186,11 @@ main{
   border-radius: 3%;
 }
 
+.bottompics h3{
+  border-bottom: 2px solid #F56A6A;
+  padding-bottom: 10px;
+}
+
 .tophalf ,.middlehalf, .bottomhalf{
   display: flex;
   text-align: center;
@@ -216,5 +221,15 @@ main{
 
 .scale:hover{
   transform: scale(1.1);
-  width: 500px;
+}
+
+#gene p{
+  margin-bottom: 2.5%;
+  font-size: 20px;
+}
+
+
+
+#gene{
+  width: 70%;
 }

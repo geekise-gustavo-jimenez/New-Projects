@@ -3,6 +3,7 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Open Sans", sans-serif;
 }
 
 nav section {
@@ -241,6 +242,11 @@ main {
   border-radius: 3%;
 }
 
+.bottompics h3 {
+  border-bottom: 2px solid #F56A6A;
+  padding-bottom: 10px;
+}
+
 .tophalf, .middlehalf, .bottomhalf {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -276,5 +282,13 @@ main {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-  width: 500px;
+}
+
+#gene p {
+  margin-bottom: 2.5%;
+  font-size: 20px;
+}
+
+#gene {
+  width: 70%;
 }

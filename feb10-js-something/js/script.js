@@ -49,6 +49,7 @@ extBtn.addEventListener('click', function() {
 });
 
 var nothing = document.getElementById('void');
+
 nothing.addEventListener('click', function() {
   content.textContent = "";
 });

@@ -40,6 +40,7 @@ for (var g = 0; g < lis.length; g += 2){
 
 submit.addEventListener('click', function(e) {
   e.preventDefault();
+  var nameLength = submit.valve;
   console.log(e);
   console.log('logged');
 

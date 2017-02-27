@@ -10,13 +10,18 @@
 <body>
   <nav>
     <a href="#">contact</a>
+    <form id="login-form">
+      <input type="text" placeholder="Username"/>
+      <input type="password" placeholder="Passord"/>
+      <input type="submit" value="log in" />
+    </form>
   </nav>
 
   <main>
-    <span>
+    <p><span class="custom">
       Feel free to reach out to me.
-    </span>
-    <form>
+    </span></p>
+    <form id="contact-form">
       <div>
         <h3>First Name: </h3>
         <h3>Last Name: </h3>
@@ -25,21 +30,22 @@
       </div>
 
       <div>
-        <input type="text" placeholder="First">
+        <input type="text" placeholder="First" disabled>
 
-        <input type="text" placeholder="Last">
+        <input type="text" placeholder="Last" disabled>
 
-        <input type="email" placeholder="something@gmail.com">
+        <input type="email" placeholder="something@gmail.com" disabled>
 
-        <textarea rows="6" cols="30" placeholder="watchu want" value="message"></textarea>
+        <textarea rows="6" cols="30" placeholder="watchu want" value="message" disabled></textarea>
         <div>
           <input type="checkbox" name="letter" value="yes" checked>
           <span>sign up for my newsletter</span>
         </div>
-        <input type="submit" value="submit">
+        <input type="submit" value="submit" disabled>
       </div>
     </form>
   </main>
+  <script src="js/md5.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

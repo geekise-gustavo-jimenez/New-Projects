@@ -35,7 +35,7 @@ document.querySelector('input[type="submit"]').addEventListener('click', functio
 
 });
 function getInfo() {
-  console.log('welcome ' + getName(form) + ' ' + 'to your site. Your email is' + getEmail(form) + getChecks(form));
+  console.log('welcome ' + getName(form) + ' ' + 'to your site. Your email is' + getEmail(form) +'. You signed up for the spam'+ getChecks(form));
 }
 
 function getEmail(arr) {
@@ -60,13 +60,13 @@ function getName(arr) {
 
 
 function getChecks(arr) {
-
+  var checks = ''
   for (var i = 0; i < arr.elements.length; i++) {
-    if (arr.elements[i].type === 'checkbox' && arr.elements[i].hasAttribute === 'checkbox'){
-      value = value + arr.elements[i].value;
+    if (arr.elements[i].type === 'checkbox' && arr.elements[i].checked){
+      checks += arr.elements[i].value + '';
     }
   }
-  return '. You signed up for the spam' ;
+  return checks;
 }
 
 

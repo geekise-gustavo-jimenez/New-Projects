@@ -1,0 +1,69 @@
+body{
+  margin: 0;
+}
+
+nav{
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(168, 30%, 60%);
+}
+
+nav a{
+  padding: 10px;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul{
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+
+li{
+  list-style-type: none;
+  padding: 10px;
+}
+
+main{
+  margin: 5px;
+}
+
+section{
+  display: flex;
+}
+
+aside{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+div{
+  flex: 2;
+}
+
+img{
+  height: 200px;
+  border-radius: 100%;
+}
+
+body > section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-image: url('http://unsplash.it/500/500');
+  background-size: cover;
+  justify-content: center;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+body > section p{
+  margin: 0;
+  width: 30%;
+}

@@ -223,3 +223,9 @@ img{
   background-color: red;
   position: absolute;
 }
+/*You can't use height and width in css it has to be on the canvas element itself*/
+#canvas{
+  background-color: #eee;
+  display: block;
+  margin: 0 auto;
+}

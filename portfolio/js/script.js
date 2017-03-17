@@ -46,9 +46,47 @@ var paddleHeight = 10;
 var paddleWidth = 75;
 var paddleX = (canvas.width - paddleWidth) / 2;
 
+// This connects with the arrows
 var rightPressed = false;
 var leftPressed = false;
 
+// this is for the bricks
+var brickRowCount = 3;
+var brickColumnCount = 5;
+var brickWidth = 75;
+var brickHeight = 20;
+// this is so they dont touch
+var brickPadding = 10;
+// theses two prevent them from spawning at the edge
+var brickOffSetTop = 30;
+var brickOffSetLeft = 30;
+var bricks = [];
+for(c=0; c < brickColumnCount; c++) {
+    bricks[c] = [];
+    for(r=0; r < brickRowCount; r++) {
+        bricks[c][r] = { x: 0, y: 0, status: 1 };
+    }
+}
+
+function drawBricks() {
+    for ( c = 0; c < brickColumnCount; c++) {
+        for ( r = 0; r < brickRowCount; r++) {
+          if (bricks[c][r].status == 1) {
+            var brickX = (c*(brickWidth + brickPadding)) + brickOffSetLeft;
+            var brickY = (c*(brickHeight + brickPadding)) + brickOffSetTop;
+            bricks[c][r].x = brickX;
+            bricks[c][r].y = brickY;
+            ctx.beginPath();
+            ctx.rect(brickX, brickY, brickWidth, brickHeight);
+            ctx.fillStyle = 'green';
+            ctx.fill();
+            ctx.closePath();
+          }
+        }
+    }
+}
+
+// this makes the ball and removes the previously drawn ball disappear giving the illusion of movement.
 function drawBall() {
     ctx.beginPath();
     ctx.arc(x, y, ballRadius, 0, Math.PI*2);
@@ -57,6 +95,7 @@ function drawBall() {
     ctx.closePath();
 }
 
+// this one creates the paddle its more of the basic things
 function drawPaddle() {
   ctx.beginPath();
   ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
@@ -66,10 +105,17 @@ function drawPaddle() {
 
 }
 
+
+
+// this part actually moves the ball automatically and senses if it hit past the paddle
+// it also draws the orther functions
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawBricks();
     drawBall();
+    collisionDetection();
     drawPaddle();
+
     x += dx;
     y += dy;
 
@@ -104,6 +150,7 @@ function draw() {
 
 }
 
+// this is another way to target th arrows
 function keyDownHandler(e) {
     if(e.keyCode == 39) {
         rightPressed = true;
@@ -112,6 +159,7 @@ function keyDownHandler(e) {
         leftPressed = true;
     }
 }
+
 
 function keyUpHandler(e) {
     if(e.keyCode == 39) {
@@ -122,8 +170,23 @@ function keyUpHandler(e) {
     }
 }
 
+function collisionDetection() {
+  for (var c = 0; c < brickColumnCount; c++) {
+    for (var r = 0; r < brickRowCount; r++) {
+      var b = bricks[c][r];
+      if (b.status == 1) {
+        if (x > b.x && x < b.x + brickWidth && y > b.y && y < b.y + brickHeight) {
+          dy = -dy;
+          b.status = 0;
+        }
+      }
+    }
+  }
+}
+
 document.addEventListener('keydown', keyDownHandler, false);
 document.addEventListener('keyup', keyUpHandler, false);
+// this keeps creating the ball so it looks like its moving
 setInterval(draw, 10);
 
 

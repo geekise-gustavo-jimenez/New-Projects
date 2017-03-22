@@ -36,6 +36,10 @@ car.addEventListener('click', function () {
 var canvas = document.getElementById('myCanvas');
 var ctx = canvas.getContext('2d');
 
+var score = 0;
+
+var lives = 3;
+
 var x = canvas.width/2;
 var y = canvas.width - 30;
 var dx = 2;
@@ -51,8 +55,8 @@ var rightPressed = false;
 var leftPressed = false;
 
 // this is for the bricks
-var brickRowCount = 3;
-var brickColumnCount = 5;
+var brickRowCount = 4;
+var brickColumnCount = 4;
 var brickWidth = 75;
 var brickHeight = 20;
 // this is so they dont touch
@@ -73,7 +77,7 @@ function drawBricks() {
         for ( r = 0; r < brickRowCount; r++) {
           if (bricks[c][r].status == 1) {
             var brickX = (c*(brickWidth + brickPadding)) + brickOffSetLeft;
-            var brickY = (c*(brickHeight + brickPadding)) + brickOffSetTop;
+            var brickY = (r*(brickHeight + brickPadding)) + brickOffSetTop;
             bricks[c][r].x = brickX;
             bricks[c][r].y = brickY;
             ctx.beginPath();
@@ -115,6 +119,7 @@ function draw() {
     drawBall();
     collisionDetection();
     drawPaddle();
+    drawScore();
 
     x += dx;
     y += dy;
@@ -136,16 +141,16 @@ function draw() {
     }
 
     if(rightPressed) {
-    paddleX += 7;
+    paddleX += 5;
     }
     else if(leftPressed) {
-    paddleX -= 7;
+    paddleX -= 5;
     }
     if (rightPressed && paddleX < canvas.width - paddleWidth) {
-      paddleX += 7;
+      paddleX += 5;
     }
     else if (leftPressed && paddleX > 0) {
-      paddleX -= 7;
+      paddleX -= 5;
     }
 
 }
@@ -175,17 +180,36 @@ function collisionDetection() {
     for (var r = 0; r < brickRowCount; r++) {
       var b = bricks[c][r];
       if (b.status == 1) {
+        // for bricks
         if (x > b.x && x < b.x + brickWidth && y > b.y && y < b.y + brickHeight) {
           dy = -dy;
           b.status = 0;
+          score++;
+          if (score == brickRowCount * brickColumnCount) {
+            alert('Hey that\'s pretty good');
+            document.location.reload();
+          }
         }
       }
     }
   }
 }
 
+function drawScore() {
+  ctx.font = "16px Arial";
+  ctx.fillStyle = 'red';
+  ctx.fillText('Score: ' + score, 8, 20);
+}
+
+function drawLives() {
+  ctx.font = "16px Arial";
+  ctx.fillStyle = "red";
+  ctx.fillText("lives: " + lives, canvas.width - 65, )
+}
+
 document.addEventListener('keydown', keyDownHandler, false);
 document.addEventListener('keyup', keyUpHandler, false);
+document.addEventListener('mousemove', mouseMoveHandler, false);
 // this keeps creating the ball so it looks like its moving
 setInterval(draw, 10);
 

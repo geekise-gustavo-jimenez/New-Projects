@@ -209,7 +209,7 @@ function drawLives() {
 
 document.addEventListener('keydown', keyDownHandler, false);
 document.addEventListener('keyup', keyUpHandler, false);
-document.addEventListener('mousemove', mouseMoveHandler, false);
+// document.addEventListener('mousemove', mouseMoveHandler, false);
 // this keeps creating the ball so it looks like its moving
 setInterval(draw, 10);
 
